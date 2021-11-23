@@ -74,7 +74,7 @@ function RepositoryBadges({fullName, language, text}: Props) {
                className={classes.githubBadge}>
                 <img
                     alt={`Language grade: ${language}`}
-                    src={`https://img.shields.io/lgtm/grade/${language.toLowerCase()}/g/${fullName}.svg?logo=lgtm&logoWidth=18`}/>
+                    src={`https://img.shields.io/lgtm/grade/${language?.toLowerCase()}/g/${fullName}.svg?logo=lgtm&logoWidth=18`}/>
             </a>
 
             <a href={`https://lgtm.com/projects/g/${fullName}/alerts/`}

@@ -140,7 +140,7 @@ export default function ProjectCard(props: Props) {
                     <a href={`https://lgtm.com/projects/g/ONSdigital/${item.name}/context:${item.language}`}>
                         <img
                             alt={`Language grade: ${item.language}`}
-                            src={`https://img.shields.io/lgtm/grade/${(item.language === "TypeScript" ? "javascript" : item.language.toLowerCase())}/g/ONSdigital/${item.name}.svg?logo=lgtm&logoWidth=18`}/>
+                            src={`https://img.shields.io/lgtm/grade/${(item.language === "TypeScript" ? "javascript" : item.language?.toLowerCase())}/g/ONSdigital/${item.name}.svg?logo=lgtm&logoWidth=18`}/>
                     </a>
                 </div>
 
